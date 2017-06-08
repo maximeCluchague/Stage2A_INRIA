@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/Projet_INRIA/src/envoie_de_fichier/Client.java"/>
+<listEntry value="/hephaistos_project/src/Client_Server/Client.java"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="1"/>
 </listAttribute>
-<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="envoie_de_fichier.Client"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Projet_INRIA"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Client_Server.Client"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="hephaistos_project"/>
 </launchConfiguration>
