@@ -1,0 +1,47 @@
+package Architecture_Client_Serveur;
+
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
+import javax.activation.MimetypesFileTypeMap;
+
+import javax.xml.ws.Endpoint;
+import javax.xml.ws.Provider;
+import javax.xml.ws.Service.Mode;
+import javax.xml.ws.ServiceMode;
+import javax.xml.ws.WebServiceProvider;
+import javax.xml.ws.http.HTTPBinding;
+
+public class WebServer {
+
+public static void main(String args[]) {
+ Endpoint endpoint = Endpoint.create(
+   HTTPBinding.HTTP_BINDING, new HtmlFileProvider());
+ System.out.println("Starting web server at http://localhost:1234/hello");
+ endpoint.publish("http://localhost:1234/hello");
+}
+
+}
+
+
+
+class HtmlFileProvider implements Provider {
+
+
+public DataSource invoke(DataSource request) {
+
+ // Change path below to serve your own HTML file...
+ FileDataSource fds = new FileDataSource("/var/www/index.html");
+
+ MimetypesFileTypeMap ftm = new MimetypesFileTypeMap();
+ ftm.addMimeTypes("text/html html htm" );
+ fds.setFileTypeMap(ftm);
+ return fds;
+}
+
+@Override
+public Object invoke(Object request) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+}

@@ -1,0 +1,35 @@
+package Client_Server;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+
+public class Serveur {
+
+    public static void main(String[] zero) {
+
+        int i=0;
+        ServerSocket socketserver  ;
+        Socket socketduserveur ;
+        while(true){
+	        try {
+	            socketserver = new ServerSocket(2019);
+	            socketduserveur = socketserver.accept(); 
+	            i++;
+	            System.out.println("Le client n°" + i + " est connecté !");
+	            socketserver.close();
+	            socketduserveur.close();
+	              
+	        }catch (IOException e) {
+	
+	            e.printStackTrace();
+	
+	        }
+        }
+        
+        
+    }
+
+
+}

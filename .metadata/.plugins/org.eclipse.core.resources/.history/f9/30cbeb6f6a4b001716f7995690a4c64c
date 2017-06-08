@@ -1,0 +1,21 @@
+package Architecture_Client_Serveur;
+
+import java.sql.*;
+public class Server {
+public static void main(String[] args) throws SQLException, ClassNotFoundException {
+Connection con = null;
+String url     = "jdbc:mysql://localhost:3306/";
+String db      = "rubrique";
+String driver  = "com.mysql.jdbc.Driver";
+String
+user    = "root";
+String pass    = "root_pswd";
+
+Class.forName(driver);
+con = DriverManager.getConnection(url+db, user, pass);
+Statement st = con.createStatement();
+ResultSet res = st.executeQuery("SELECT personne.id, personne.prenom, personne.nom, personne.telephone, personne.email, info_perso.age, info_perso.ville from personne, info_perso where personne.id = info_perso.info_id");
+System.out.println(" Première version: Normal Statement ");
+//System.out.println(" ");
+
+}}
