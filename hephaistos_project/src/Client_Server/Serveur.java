@@ -47,7 +47,7 @@ class LogFileAnalyse extends Thread {
 			 * Ici on pourra parser fileLog pour enregistrer les datas dans une base SQL
 			 */
 			
-			System.out.println(fileLog);
+			System.out.print(fileLog);
 			System.out.println("================<OUTPUT>==============");
 			sortie.close();
 			entree.close();
@@ -63,7 +63,7 @@ class Serveur {
 		Socket socket;
 
 		try {
-			standardiste = new ServerSocket(3015);
+			standardiste = new ServerSocket(3018);
 			System.out.println("le serveur est prêt !\n");
 			while(true) {
 				socket = standardiste.accept();

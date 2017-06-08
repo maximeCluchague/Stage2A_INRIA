@@ -19,8 +19,9 @@ class Client {
 		String ligne;
 		Socket socket;
 		try {
-			socket = new Socket("localhost", 3015);
-			lecteurFichier = new BufferedReader(new FileReader("/home/maxime/Bureau/Stage 2A/Stage2A_INRIA/Documentation/Diagramme_de_sequence"));
+			socket = new Socket("localhost", 3018);
+			lecteurFichier = new BufferedReader(new FileReader("." +
+					"/src/Data/file_log_test"));
 			entree = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			sortie = new PrintStream(socket.getOutputStream());
 			while ((ligne = lecteurFichier.readLine()) != null) {
