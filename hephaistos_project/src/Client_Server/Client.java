@@ -19,20 +19,20 @@ class Client {
 		String ligne;
 		Socket socket;
 		try {
-			socket = new Socket("localhost", 3018);
-			lecteurFichier = new BufferedReader(new FileReader("." +
-					"/src/Data/file_log_test"));
+			socket = new Socket("localhost", 3023);
+			lecteurFichier = new BufferedReader(new FileReader("./src/Data/file_log_test"));
 			entree = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			sortie = new PrintStream(socket.getOutputStream());
 			while ((ligne = lecteurFichier.readLine()) != null) {
 				sortie.println(ligne);
+				System.out.println("ok");
 			}
 			sortie.println("<END_FILE>");
 			
 			//System.out.println(entree.readLine());
 		        sortie.close();
 		        entree.close();
-			socket.close();
+		        socket.close();
 		}
 		catch(FileNotFoundException exc) {
 			System.out.println("Fichier introuvable");

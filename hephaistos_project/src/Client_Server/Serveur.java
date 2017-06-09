@@ -63,7 +63,7 @@ class Serveur {
 		Socket socket;
 
 		try {
-			standardiste = new ServerSocket(3018);
+			standardiste = new ServerSocket(3023);
 			System.out.println("le serveur est prêt !\n");
 			while(true) {
 				socket = standardiste.accept();
