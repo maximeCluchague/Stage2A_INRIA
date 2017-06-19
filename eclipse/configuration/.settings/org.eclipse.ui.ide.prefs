@@ -1,0 +1,5 @@
+MAX_RECENT_WORKSPACES=5
+RECENT_WORKSPACES=/user/mcluchag/home/workspace\n/run/netsop/u/sop-nas2a/vol/home_hephaistos/mcluchag/Desktop/Stage2A_INRIA\n/user/mcluchag/home/Desktop\n/run/netsop/u/sop-nas2a/vol/home_hephaistos/mcluchag/workspace
+RECENT_WORKSPACES_PROTOCOL=3
+SHOW_WORKSPACE_SELECTION_DIALOG=true
+eclipse.preferences.version=1

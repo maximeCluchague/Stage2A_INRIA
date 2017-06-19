@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_51 (Oracle Corporation)
+
+Name: license.html
+SHA-256-Digest: f11qnRHHGri3WfFJfz6aXNCmn9xdwpg5N2EpR2v+59s=
+
+Name: oepe-40.png
+SHA-256-Digest: Rlye8GPJ+iRPN7zkBoLzl5n3gw5LZPcF47y4HjZkAwk=
+
+Name: feature.xml
+SHA-256-Digest: i+bzKMG3xgQ7opREe/2s59w/LvJmhC8+MTIe14pRGPM=
+
+Name: feature.properties
+SHA-256-Digest: NSJ4vNgFVYks3nboyoVfUwok2AdYejOM/wnKYf1gLRQ=
+
